@@ -21,7 +21,7 @@ pipeline {
                 {
                     steps{
                         echo 'Performing Unit Testing By Prudwi Ceo'
-                        sh 'mvn test'
+                        sh 'mvn test' -Dspring.profiles.active=test
                     }
 
                     post{
