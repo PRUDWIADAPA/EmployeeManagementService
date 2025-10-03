@@ -40,7 +40,7 @@ pipeline {
 
                     post{
                         always{
-                            junit '**/target/filesafe-reports/*.xml'
+                            junit '**/target/failsafe-reports/*.xml'
                         }
                     }
                 }
