@@ -35,7 +35,7 @@ pipeline {
                     steps{
                         echo 'Performing integration Testing'
 
-                        sh 'mvn verify -DskipUnitTests'
+                        sh 'mvn verify -DskipTests'
                     }
 
                     post{
